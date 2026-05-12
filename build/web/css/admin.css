@@ -1,0 +1,33 @@
+/* ===== Admin Specific Styles ===== */
+body.admin-login-body {
+    background: #0f172a;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.admin-login-body .auth-container {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.85), rgba(30, 41, 59, 0.9)),
+                url('https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=1600&auto=format&fit=crop') center/cover no-repeat;
+}
+
+.admin-login-body .circle-1 {
+    background: rgba(37, 99, 235, 0.2);
+}
+
+.admin-login-body .circle-2 {
+    background: rgba(139, 92, 246, 0.15);
+}
+
+.admin-login-body .circle-3 {
+    background: rgba(16, 185, 129, 0.1);
+}
+
+.admin-login-body .btn-auth {
+    background: #1e293b;
+}
+
+.admin-login-body .btn-auth:hover {
+    background: #0f172a;
+}
