@@ -5,13 +5,18 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static final String URL = "jdbc:mysql://yamabiko.proxy.rlwy.net:57396/railway?useSSL=true&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+
+    private static final String URL =
+        "jdbc:mysql://yamabiko.proxy.rlwy.net:57396/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+
     private static final String USER = "root";
-    private static final String PASSWORD = "RjNtVxmMoxUWGszrSAbxYCBXjBizAmIS";// 🔴 CHANGE THIS
+
+    private static final String PASSWORD =
+        "RjNtVxmMoxUWGszrSAbxYCBXjBizAmIS";
 
     static {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
